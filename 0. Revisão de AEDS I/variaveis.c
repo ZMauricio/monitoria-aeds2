@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* Referencia: Learn code the hard way http://c.learncodethehardway.org/book/ex6.html */
+/* Referencias:
+Learn code the hard way
+http://c.learncodethehardway.org/book/ex6.html
+http://c.learncodethehardway.org/book/ex8.html */
 
 int main(int argc, char *argv[]){
 
@@ -13,7 +16,10 @@ int main(int argc, char *argv[]){
     char letra_preferida = 'A';//caracter (dica: precisa ter aspas simples neste caso)
     char primeiro_nome[] = "Adam";//string (conjunto de caracteres)
     char ultimo_nome[] = "Levigne";//string (conjunto de caracteres)
+    float notas[] = {8.1, 7.5, 9.0, 10.0, 0.87};
+    char respostas_exercicios[] = {'a', 'b', 'c', ' ', 'b', 'b', 'e', ' ', 'a', 'c', 'd', '\0'};
 
+    idade = 28;//mudando o valor da variavel
     /*
     Para exibir as variaveis voce precisa obedecer a formatacao de cada tipo
     %d para inteiros, %f para floats, %c para caracter e %s para strings
@@ -25,6 +31,12 @@ int main(int argc, char *argv[]){
     printf("Pode me chamar de %s.\n", primeiro_nome);
     printf("Ultimo nome: %s.\n", ultimo_nome);
     printf("Nome completo: %s %s.\n", primeiro_nome, ultimo_nome);
+    printf("Notas da unidade:\n");
+    int i = 0;
+    for(i = 0; i < sizeof(float); i++) {
+      printf("%f\n", notas[i]);
+    }
+    printf("Respostas dos exercicios: \"%s\"\n", respostas_exercicios);
 
     return 0;
 }
