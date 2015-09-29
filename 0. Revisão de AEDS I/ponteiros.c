@@ -7,6 +7,7 @@ Referencia: http://www.ime.usp.br/~pf/algoritmos/aulas/pont.html
 
 int main(int argc, char *argv[]){
 
+    //Declaracao e atribuicao
     int variavel_qualquer;
     int *ponteiro1, *ponteiro2;
 
@@ -14,6 +15,9 @@ int main(int argc, char *argv[]){
     ponteiro2 = ponteiro1;
 
     printf("%p", ponteiro2);
-    
+
+    //Troca de dois valores inteiros
+
+
     return 0;
 }
