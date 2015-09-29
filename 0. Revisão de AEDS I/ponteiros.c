@@ -3,6 +3,7 @@
 /*
 Um ponteiro eh uma variavel que ira guardar um endereco de memoria, ou seja, a referencia de onde o conteudo dessa variavel esta alocada.
 Referencia: http://www.ime.usp.br/~pf/algoritmos/aulas/pont.html
+Explicacao detalhada (bem melhor): http://c.learncodethehardway.org/book/ex15.html
 */
 
 void troca (int *p, int *q){
