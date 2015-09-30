@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/*
+Struct eh uma estrutura que abriga diversas variaveis (como em um dicionario) que se referem a uma mesma entidade de dados
+Por exemplo:  uma struct chamada de Pessoa pode ter variaveis como endereco, telefone e nome. Sao tres variaveis diferentes mas todas abrigadas em uma estrutura so,
+para facilitar o agrupamento e a manipulacao dos dados.
+Referencia: http://www.ime.usp.br/~pf/algoritmos/aulas/stru.html
+*/
+
 typedef struct datas {
   int dia;
   int mes;
