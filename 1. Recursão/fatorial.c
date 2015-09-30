@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int fatorial_recursivo(int numero){
-  printf("%d * %d = ", numero, numero - 1);
 
   if (numero == 0 || numero == 1){
     return 1;
@@ -17,7 +16,7 @@ int fatorial_iterativo(int numero){
   }else{
 
     int resultado = numero;
-    int i = 0;
+    int i ;
     for(i = numero - 1; i != 0 ; i--){
       printf("%d * %d = ", resultado, i);
       resultado = resultado * i;
