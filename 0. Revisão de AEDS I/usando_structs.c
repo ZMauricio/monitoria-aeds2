@@ -1,13 +1,16 @@
 #include <stdio.h>
 
-struct data {
+typedef struct datas {
   int dia;
   int mes;
   int ano;
-} x;
-typedef struct dma data;
+} data;
 
-int idade(data data_nascimento, data data_atual)
+int idade(data data_nascimento, data data_atual){
+  int idade = data_atual.ano - data_nascimento.ano;
+
+  return idade;
+}
 
 int main(int argc, char *argv[]){
 
@@ -22,8 +25,7 @@ int main(int argc, char *argv[]){
   data_atual.mes = 9;
   data_atual.ano = 2015;
 
-
-  printf("Hello, World!\n");
+  printf("Voce tem %d anos\n", idade(data_nascimento, data_atual));
 
   return 0;
 }
