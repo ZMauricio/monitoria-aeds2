@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int lg (int n, int d){
+   int i;
+   i = 0;
+
+   while (n > 1) {
+      n = n / d;
+      i += 1;
+   }
+   return i;
+}
+
+int lg_recursivo(int n, int d){
+  int i=0;
+
+  if(n>1){
+    n=n/d;
+    i++;
+    lg_recursivo( n-1, d);
+  }
+  else{
+       return i;
+      }
+
+}
+
+int main()
+{
+ int n=100, d=10;
+ //A variável d representa a base.
+
+  printf("Algoritmo que calcula o logaritmo de n na base d\n");
+
+  printf("Leia n: ");
+  scanf("%d",&n);
+
+  printf("Leia d: ");
+  scanf("%d",&d);
+
+ while(n>0){
+
+    printf("\nVersao Iterativa");
+    printf("\nO logaritmo de %d na base %d eh: %d", n, d, lg(n,d));
+
+    printf("\n\nVersao recursiva");
+    printf("\nO logaritmo de %d na base %d eh: %d", n, d, lg(n,d));
+
+    printf("\n\n\nLeia n: ");
+    scanf("%d",&n);
+
+    printf("Leia d: ");
+    scanf("%d",&d);
+
+ }
+
+
+  getch();
+}
